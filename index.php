@@ -8,8 +8,6 @@
  */
 
 define('ROOT_PATH', dirname(__FILE__) . '/');
-define('MODEL_PATH', ROOT_PATH . 'model/');
-define('SERVICE_PATH', ROOT_PATH . 'service/');
 define('HANDLER_PATH', ROOT_PATH . 'handler/');
 define('SMARTY_PATH', ROOT_PATH . 'framework/lib/smarty/libs/');
 define('TEMPLATE_PATH', ROOT_PATH . 'template/');
