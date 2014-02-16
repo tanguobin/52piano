@@ -1,0 +1,36 @@
+/**
+ * Created by gbtan.
+ * User: tanguobin
+ * Date: 2012-4-6
+ * Time: 上午10:42
+ * Email: tanguobin@duokan.com
+ * Description: base样式
+ */
+
+/* 清除浮动 */
+.clear {
+    clear:both;
+}
+.cf:before,
+.cf:after { content:""; display:block; }
+.cf:after { clear:both; }
+.cf { *zoom:1; }
+
+/* hide */
+.hide {
+    display: none;
+}
+.fl {
+	float: left;
+}
+.f14 {
+	font-size: 14px;
+}
+
+/* 重置文字 */
+h1, h2, h3 {
+    font-weight: 500;
+}
+h1 { font-size: 18px; }
+h2 { font-size: 16px; }
+a { color: #ff74a1; }

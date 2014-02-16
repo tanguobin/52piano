@@ -1,0 +1,254 @@
+{=include depends/inc_reset.css=}
+{=include depends/inc_base.css=}
+{=include depends/inc_header.css=}
+{=include depends/inc_footer.css=}
+{=include depends/inc_layout.css=}
+{=include depends/inc_module.css=}
+
+/* icon */
+.i-idea {
+	background: url(/static/img/icon.png) no-repeat 0 0;
+	display: inline-block;
+	width: 58px;
+	height: 37px;
+}
+.i-aim {
+	background: url(/static/img/icon.png) no-repeat 0 -100px;
+	display: inline-block;
+	width: 63px;
+	height: 29px;
+	margin-top: 7px;
+}
+.i-quality {
+	background: url(/static/img/icon.png) no-repeat 0 -50px;
+	display: inline-block;
+	width: 34px;
+	height: 46px;
+	margin-top: -7px;
+}
+.i-profession {
+	background: url(/static/img/icon.png) no-repeat 0 -400px;
+	display: inline-block;
+	height: 31px;
+}
+.i-detail {
+	background: url(/static/img/icon.png) no-repeat 0 -350px;
+	display: inline-block;
+	height: 35px;
+}
+.i-feature {
+	background: url(/static/img/icon.png) no-repeat 0 -150px;
+	display: inline-block;
+	height: 27px;
+}
+.i-cool {
+	background: url(/static/img/icon.png) no-repeat 0 -300px;
+	display: inline-block;
+	height: 34px;
+}
+.i-profession, .i-detail, .i-feature, .i-cool {
+	width: 40px;
+}
+
+/* 关于我们 */
+.col-m {
+	width: 650px;
+	margin-right: 30px;
+}
+.col-e {
+	width: 280px;
+}
+.col {
+	float: left;
+}
+.col p {
+	color: #666;
+}
+.col-margin {
+	margin-top: 35px;
+}
+.col .hd {
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 6px;
+}
+.teach-system li.first {
+	padding-left: 0;
+}
+.teach-system li {
+	float: left;
+	margin-top: 30px;
+	padding: 0 25px 0 10px;
+	width: 180px;
+}
+.teach-system li span {
+	float: left;
+	margin-right: 10px;
+}
+.teach-system li .title {
+	font-size: 26px;
+	font-family: 'Microsoft YaHei';
+	color: #666;
+	margin-bottom: 18px;
+}
+.teach-system li p {
+	clear: both;
+}
+.latest-news .bd li {
+	margin-bottom: 10px;
+	list-style: square inside;
+	color: #08c;
+}
+.latest-news .bd, .intro .bd {
+	padding-top: 15px;
+}
+.intro p {
+	margin: 5px 0 15px 310px;
+}
+.feature dl {
+	float: left;
+	margin-top: 20px;
+	padding-right: 20px;
+	width: 305px;
+	height: 75px;
+}
+.feature dl dt {
+	float: left;
+	margin-right: 15px;
+}
+.feature dl dd {
+	width: 240px;
+	float: left;
+}
+.developer .bd .datalist {
+	padding-top: 15px;
+	float: left;
+	height: 370px;
+	overflow: hidden;
+}
+.developer dl {
+	float: left;
+	margin-bottom: 50px;
+}
+.developer dl dt {
+	border: 1px solid #ccc;
+	-top: 4px;
+}
+.developer dl dt, .developer dl dd {
+	float: left;
+}
+.developer dl dd {
+	margin-left: 10px;
+	width: 207px;
+	color: #666;
+}
+img {
+	vertical-align: middle;
+}
+
+/* 师资力量 */
+.teacher {
+	width: 100%;
+}
+.teacher .bd {
+	padding-top: 15px;
+}
+.teacher .bd p {
+	margin: 20px 0 50px 420px;
+}
+.teacher li {
+	padding: 30px 0 30px;
+}
+.teacher li.first {
+	border-bottom: 1px dashed #ccc;
+}
+
+/* 获奖情况 */
+.prize .bd {
+	padding-top: 15px;
+}
+.prize .bd p {
+	margin: 20px 0 50px 340px;
+}
+.prize li {
+	padding: 30px 0 30px;
+	border-bottom: 1px dashed #ccc;
+	width: 100%;
+	float: left;
+}
+.prize li.last {
+	border-bottom: none;
+}
+
+/* 教学环境 */
+.env {
+	width: 100%;
+}
+.env .bd {
+	margin-top: 20px;
+}
+.env li {
+	padding: 30px 0 30px;
+	border-bottom: 1px dashed #ccc;
+	text-align: center;
+}
+.env li.last {
+	border-bottom: none;
+}
+.env p {
+	margin-top: 10px;
+}
+
+/* 钢琴知识 */
+
+/* 联系我们 */
+.layout-bg {
+	background: url('/static/img/layout.bg.gif') repeat-y scroll 190px top transparent;
+}
+.margin-190 {
+	margin-left: 190px;
+}
+.help {
+	padding-left: 30px;
+}
+.help-nav {
+    font-size: 14px;
+    padding-top: 10px;
+}
+.help .cooperation li {
+	margin-bottom: 1em;
+}
+.help-nav li {
+    height: 46px;
+    line-height: 44px;
+}
+.site-link-list {
+    margin-top: 30px;
+}
+.site-link-list li {
+    margin-top: 10px;
+}
+.help-nav a {
+    display: block;
+    margin-right: -1px;
+    padding-left: 20px;
+}
+.help-nav .current a {
+    border-color: #ccc #fff #ccc #ccc;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+}
+.help .block {
+	padding: 20px 30px 30px;
+}
+.help .where {
+	text-align: center;
+}
+.help .where p {
+	margin-top: 15px;
+}

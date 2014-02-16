@@ -1,0 +1,14 @@
+
+.mod {
+	margin-bottom: 30px;
+}
+
+.mod .hd {
+	background: url('/static/img/icons.gif') no-repeat 0 2px;
+	padding: 0 0 5px 30px;
+}
+
+.mod .bd p {
+	text-indent: 2em;
+	margin-bottom: 10px;
+}

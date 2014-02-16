@@ -1,0 +1,43 @@
+/**
+ * Created by gbtan.
+ * User: tanguobin
+ * Date: 2012-4-5
+ * Time: 下午4:44
+ * Email: tanguobin@duokan.com
+ * Description: 网页布局样式
+ */
+
+/* 居中 */
+#header, #container, #footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/** 布局基础样式 **/
+.col-main {
+    float: left;
+    width: 100%;
+    /* bug fix: 主栏没有内容时，在 Firefox 和 Chrome 等浏览器下，布局不对 */
+    min-height: 1px;
+}
+
+/** 清除浮动 **/
+.layout:after, .main-wrap:after, .col-sub:after, .col-extra:after, .clearfix:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.layout {
+    overflow: hidden;
+}
+.layout, .main-wrap, .col-sub, .col-extra .clearfix {
+    *zoom: 1;
+}
+.col-sub, .col-extra {
+    float: left;
+}
+.col-sub {
+	width: 190px;
+	margin-left: -100%;
+}

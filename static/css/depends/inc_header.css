@@ -1,0 +1,46 @@
+/**
+ * Created by gbtan.
+ * User: tanguobin
+ * Date: 2012-4-5
+ * Time: 下午3:13
+ * Email: tanguobin@duokan.com
+ * Description: header部分样式
+ */
+
+#header, #container, #footer {
+    width: 960px;
+}
+#header {
+    margin-top: 17px;
+    margin-bottom: 10px;
+}
+.nav-channel {
+    overflow: hidden;
+    color: #fff;
+    height: 35px;
+    background-color: #ff74a1;
+    border-radius: 3px;
+    margin-top: 5px;
+	font-family: 'Microsoft YaHei';
+}
+.nav-channel-list li {
+    font-size: 16px;
+    float: left;
+    width: 100px;
+}
+.nav-channel-list li a {
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    height: 35px;
+    line-height: 35px;
+    cursor: pointer;
+}
+.nav-channel-list a:hover {
+    text-decoration: none;
+	background-color: #f83a7c;
+}
+.nav-channel-list .nav-active a {
+	background-color: #e3017f;
+}
