@@ -66,9 +66,6 @@ foreach ($action_config as $key => $value) {
     if (preg_match($key, $request_url, $matches)) {
         // 导入BaseAction和url对应的php类文件
         include_by_path(HANDLER_PATH . 'BaseAction.class.php');
-        // 导入依赖包
-	    include_by_path(MODEL_PATH);
-        include_by_path(SERVICE_PATH);
 	    // 导入url映射的action类
 	    include_by_path($value['path']);
 		$tokens = explode('/', $value['path']);
