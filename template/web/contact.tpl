@@ -2,7 +2,7 @@
 
 {block name="title"} - 联系我们{/block}
 
-{block name="description"}比艾诺艺术中心欢迎您的光临，欢迎来电咨询13196799363。{/block}
+{block name="description"}比艾诺艺术中心欢迎您的光临，欢迎来电咨询13196799363，地址：江苏省常州市新北区府琛广场一号楼丙单元A区405。{/block}
 
 {block name="currentContact"} class="nav-active"{/block}
 
@@ -12,7 +12,7 @@
 			<div class="main-wrap margin-190 help" id="J_help">
 				<div class="where block">
 					<img src="/static/img/map.jpg" />
-					<p><b>江苏省常州市新北区府琛广场一号楼丙单元a区405</b></p>
+					<p><b>江苏省常州市新北区府琛广场一号楼丙单元A区405</b></p>
 				</div>
 				<div class="cooperation hide block">
 					<ul class="f14">
