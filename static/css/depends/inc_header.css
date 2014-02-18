@@ -18,7 +18,7 @@
     overflow: hidden;
     color: #fff;
     height: 35px;
-    background-color: #ff74a1;
+    background-color: #14864b;
     border-radius: 3px;
     margin-top: 5px;
 	font-family: 'Microsoft YaHei';
@@ -42,5 +42,5 @@
 	background-color: #f83a7c;
 }
 .nav-channel-list .nav-active a {
-	background-color: #e3017f;
+	background-color: #085c42;
 }
