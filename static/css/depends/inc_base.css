@@ -23,6 +23,9 @@
 .fl {
 	float: left;
 }
+.fr {
+	float: right;
+}
 .f14 {
 	font-size: 14px;
 }

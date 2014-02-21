@@ -46,7 +46,27 @@
 	display: inline-block;
 	height: 34px;
 }
-.i-profession, .i-detail, .i-feature, .i-cool {
+.i-creative {
+	background: url(/static/img/icon.png) no-repeat 0 -450px;
+	display: inline-block;
+	height: 39px;
+}
+.i-great {
+	background: url(/static/img/icon.png) no-repeat 0 -500px;
+	display: inline-block;
+	height: 30px;
+}
+.i-service {
+	background: url(/static/img/icon.png) no-repeat 0 -250px;
+	display: inline-block;
+	height: 31px;
+}
+.i-authority {
+	background: url(/static/img/icon.png) no-repeat 0 -200px;
+	display: inline-block;
+	height: 33px;
+}
+.i-profession, .i-detail, .i-feature, .i-cool, .i-creative, .i-great, .i-service, .i-authority {
 	width: 40px;
 }
 
@@ -111,7 +131,6 @@
 	margin-top: 20px;
 	padding-right: 20px;
 	width: 305px;
-	height: 75px;
 }
 .feature dl dt {
 	float: left;
@@ -124,12 +143,12 @@
 .developer .bd .datalist {
 	padding-top: 15px;
 	float: left;
-	height: 370px;
+	height: 420px;
 	overflow: hidden;
 }
 .developer dl {
 	float: left;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 .developer dl dt {
 	border: 1px solid #ccc;
