@@ -1,0 +1,6 @@
+#
+# robots.txt 52piano
+#
+Sitemap: http://www.52piano.cn/sitemap.xml
+User-agent: *
+Disallow: /static/

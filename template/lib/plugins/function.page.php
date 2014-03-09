@@ -82,28 +82,28 @@ function smarty_function_page($params, $smarty)
 		}
 		// 如果1消失了，需要显示首页
 		if ($current_page_num > $head_offset) {
-			$output .= '<a href="'.$url.'pn=0">[首页]</a>';
+			$output .= '<a class="padding8" href="'.$url.'pn=0">首页</a>';
 		}
 	}
 	// 只要不是第一页，都显示上一页
 	if ($start != $current_page_num) {
-		$output .= '<a href="'.$url.'pn='.($current_num-$result_num).'">[上一页]</a>';
+		$output .= '<a class="padding8" href="'.$url.'pn='.($current_num-$result_num).'">上一页</a>';
 	}
 	// 显示页码
 	for ($i = $start; $i < $end; $i++) {
 		if ($i == $current_page_num) {
 			$output .= '<b>'. ($i+1) .'</b>';
 		} else {
-			$output .= '<a href="'.$url.'pn='.($i * $result_num).'">['.($i+1).']</a>';
+			$output .= '<a href="'.$url.'pn='.($i * $result_num).'">'.($i+1).'</a>';
 		}
 	}
 	// 只要不是最后一页，都显示下一页
 	if (($current_page_num+1) != $total_page_num) {
-		$output .= '<a href="'.$url.'pn='.($current_num + $result_num).'">[下一页]</a>';
+		$output .= '<a class="padding8" href="'.$url.'pn='.($current_num + $result_num).'">下一页</a>';
 	}
 	// 如果最后一个页面消失了，需要显示最后一页
 	if ($total_page_num > $page_num_limit && ($current_page_num + $tail_offset + 1) < $total_page_num) {
-		$output .= '<a href="'.$url.'pn='.(($total_page_num-1) * $result_num).'">[最后一页]</a>';
+		$output .= '<a class="padding8" href="'.$url.'pn='.(($total_page_num-1) * $result_num).'">最后一页</a>';
 	}
 
 	return $output;

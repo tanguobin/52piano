@@ -4,6 +4,7 @@
 {=include depends/inc_footer.css=}
 {=include depends/inc_layout.css=}
 {=include depends/inc_module.css=}
+{=include depends/inc_slider.css=}
 
 /* icon */
 .i-idea {
@@ -115,10 +116,10 @@
 .teach-system li p {
 	clear: both;
 }
-.latest-news .bd li {
+.latest-news .bd li, .know li {
 	margin-bottom: 10px;
 	list-style: square inside;
-	color: #08c;
+	color: #77c;
 }
 .latest-news .bd, .intro .bd {
 	padding-top: 15px;
@@ -183,6 +184,11 @@ img {
 	border-bottom: 1px dashed #ccc;
 }
 
+/* 学生风采 */
+.student ol {
+	margin: 20px auto;
+}
+
 /* 获奖情况 */
 .prize .bd {
 	padding-top: 15px;
@@ -220,6 +226,14 @@ img {
 }
 
 /* 钢琴知识 */
+.know {
+	width: 500px;
+	margin: 15px auto;
+}
+.knowledge h1 {
+	margin-bottom: 30px;
+	color: #77c;
+}
 
 /* 联系我们 */
 .layout-bg {

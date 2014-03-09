@@ -1,1 +1,31 @@
+# errordoc
+ErrorDocument 404 http://52piano.cn/static/html/40x.html
+
+# compress
+FilterProvider compress1 DEFLATE resp=CONTENT-TYPE /text/
+FilterChain compress1
+FilterProvider compress2 DEFLATE resp=CONTENT-TYPE text/html
+FilterChain compress2
+FilterProvider compress3 DEFLATE resp=CONTENT-TYPE application/zip
+FilterChain compress3
+FilterProvider compress4 DEFLATE resp=CONTENT-TYPE text/plain
+FilterChain compress4
+FilterProvider compress5 DEFLATE resp=CONTENT-TYPE image/jpeg
+FilterChain compress5
+FilterProvider compress6 DEFLATE resp=CONTENT-TYPE image/png
+FilterChain compress6
+FilterProvider compress7 DEFLATE resp=CONTENT-TYPE image/pjpeg
+FilterChain compress7
+FilterProvider compress8 DEFLATE resp=CONTENT-TYPE image/gif
+FilterChain compress8
+FilterProvider compress9 DEFLATE resp=CONTENT-TYPE image/bmp
+FilterChain compress9
+FilterProvider compress10 DEFLATE resp=CONTENT-TYPE application/x-shockwave-flash
+FilterChain compress10
+
+# rewrite
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^.+ index.php [L]
 

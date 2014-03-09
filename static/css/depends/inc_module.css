@@ -12,3 +12,37 @@
 	text-indent: 2em;
 	margin-bottom: 10px;
 }
+
+.pg {
+	font-family: arial;
+	font-size: 13px;
+	height: 24px;
+	line-height: 24px;
+	padding: 12px 0;
+	margin: 40px auto;
+	text-align: center;
+}
+.pg b {
+	color: #000;
+	margin-right: 5px;
+	display: inline-block;
+	width: 25px;
+	text-align: center;
+}
+.pg a {
+	margin-right: 5px;
+	display: inline-block;
+	line-height: 24px;
+	border: 1px solid #e7ecf0;
+	color: #0000cd;
+	width: 25px;
+	text-decoration: none;
+	text-align: center;
+}
+.pg .padding8 {
+	padding: 0 8px;
+	width: auto;
+}
+.pg a:hover {
+	background-color: #e9f1f7;
+}

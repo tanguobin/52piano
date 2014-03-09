@@ -53,27 +53,29 @@
             return false;
         });
     });
-    switch(location.hash) {
-        case hashes[0]:
-            helpSections.hide().eq(0).show();
-            nav.children().removeClass('current').eq(0).addClass('current');
-            break;
-        case hashes[1]:
-            helpSections.hide().eq(1).show();
-            nav.children().removeClass('current').eq(1).addClass('current');
-            break;
-        case hashes[2]:
-            helpSections.hide().eq(2).show();
-            nav.children().removeClass('current').eq(2).addClass('current');
-            break;
-        case hashes[3]:
-            helpSections.hide().eq(3).show();
-            nav.children().removeClass('current').eq(3).addClass('current');
-            break;
-        default:
-            helpSections.hide().eq(0).show();
-            nav.children().removeClass('current').eq(0).addClass('current');
-    }
+	$(window).bind("hashchange", function(){
+		switch(location.hash) {
+			case hashes[0]:
+				helpSections.hide().eq(0).show();
+				nav.children().removeClass('current').eq(0).addClass('current');
+				break;
+			case hashes[1]:
+				helpSections.hide().eq(1).show();
+				nav.children().removeClass('current').eq(1).addClass('current');
+				break;
+			case hashes[2]:
+				helpSections.hide().eq(2).show();
+				nav.children().removeClass('current').eq(2).addClass('current');
+				break;
+			case hashes[3]:
+				helpSections.hide().eq(3).show();
+				nav.children().removeClass('current').eq(3).addClass('current');
+				break;
+			default:
+				helpSections.hide().eq(0).show();
+				nav.children().removeClass('current').eq(0).addClass('current');
+		}
+	});
 })();
 </script>
 {/block}

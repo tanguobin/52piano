@@ -8,6 +8,7 @@
  */
 
 define('ROOT_PATH', dirname(__FILE__) . '/');
+define('MODEL_PATH', ROOT_PATH . 'model/');
 define('HANDLER_PATH', ROOT_PATH . 'handler/');
 define('SMARTY_PATH', ROOT_PATH . 'framework/lib/smarty/libs/');
 define('TEMPLATE_PATH', ROOT_PATH . 'template/');
@@ -26,12 +27,8 @@ $action_config = array (
 	'/^\/contact\.html/' => array (
    		'path' => HANDLER_PATH . 'ContactAction.class.php'
     ),
-	// 帮助
-	'/^\/help\/(cooper|link)\.html/' => array (
-   		'path' => HANDLER_PATH . 'ContactAction.class.php'
-    ),
 	// 钢琴知识
-	'/^\/know\.html/' => array (
+	'/^\/know(_[0-9]+)?\.html/' => array (
    		'path' => HANDLER_PATH . 'KnowAction.class.php'
     ),
 	// 教学环境
@@ -45,6 +42,10 @@ $action_config = array (
 	// 师资力量
     '/^\/teacher\.html/' => array (
    		'path' => HANDLER_PATH . 'TeacherAction.class.php'
+    ),
+	// 学生风采
+    '/^\/student\.html/' => array (
+   		'path' => HANDLER_PATH . 'StudentAction.class.php'
     ),
 	// 首页
     '/^\/?$/' => array (
@@ -66,6 +67,8 @@ foreach ($action_config as $key => $value) {
     if (preg_match($key, $request_url, $matches)) {
         // 导入BaseAction和url对应的php类文件
         include_by_path(HANDLER_PATH . 'BaseAction.class.php');
+		// 导入依赖包
+	    include_by_path(MODEL_PATH);
 	    // 导入url映射的action类
 	    include_by_path($value['path']);
 		$tokens = explode('/', $value['path']);

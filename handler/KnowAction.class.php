@@ -15,7 +15,34 @@ class KnowAction extends BaseAction {
 	}
 
 	public function execute ($context) {
-		$this->setTplName('web/know.tpl');
-		$this->render();
+		$qid_slash = $context[1];
+		if (isset($qid_slash)) {
+			$qid = substr($qid_slash, 1);
+			$question = KnowModel::get_know($qid);
+			$this->setTplParam('question', $question);
+			$this->setTplName('web/know_detail.tpl');
+			$this->render();
+		} else {
+			$pn = $_GET['pn'];
+			$size = 20;
+			if (isset($pn)) {
+				$pn = (int)($pn);
+			} else {
+				$pn = 0;
+			}
+			$questions = self::get_know_list($pn, $size);
+			$total = KnowModel::get_ct_know();
+			$this->setTplParam('questions', $questions);
+			$this->setTplParam('currentPn', $pn);
+			$this->setTplParam('rn', $size);
+			$this->setTplParam('total', $total);
+			$this->setTplName('web/know.tpl');
+			$this->render();
+		}
+	}
+	
+	private function get_know_list($pn, $size) {
+		$questions = KnowModel::get_knows($pn, $size);
+		return $questions;
 	}
 }
