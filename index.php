@@ -55,7 +55,7 @@ $action_config = array (
 
 // 跳转到404页面
 function to404 () {
-    require_once('/static/html/40x.html');
+    require_once(ROOT_PATH . 'static/html/40x.html');
     header("HTTP/1.1 404 Not Found");
     header("Status: 404 Not Found");
     exit;
