@@ -1,6 +1,6 @@
 {extends file="lib/framework/base_fw.html"}
 
-{block name="title"} - 学生风采{/block}
+{block name="title"}学生风采{/block}
 
 {block name="description"}比艾诺艺术中心面向常州地区招生，目前在本中心学习的学子达500余人，学子成绩优异，屡次斩获国内外钢琴大赛大奖，欢迎来电咨询13196799363。{/block}
 

@@ -1,6 +1,6 @@
 {extends file="lib/framework/base_fw.html"}
 
-{block name="title"} - 联系我们{/block}
+{block name="title"}联系我们{/block}
 
 {block name="description"}比艾诺艺术中心欢迎您的光临，欢迎来电咨询13196799363，地址：江苏省常州市新北区府琛广场一号楼丙单元A区405。{/block}
 

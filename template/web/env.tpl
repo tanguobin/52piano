@@ -1,6 +1,6 @@
 {extends file="lib/framework/base_fw.html"}
 
-{block name="title"} - 教学环境{/block}
+{block name="title"}教学环境{/block}
 
 {block name="description"}比艾诺艺术中心教学环境优雅，深受学子喜欢，欢迎来电咨询13196799363。{/block}
 

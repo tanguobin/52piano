@@ -1,6 +1,6 @@
 {extends file="lib/framework/base_fw.html"}
 
-{block name="title"} - 获奖情况{/block}
+{block name="title"}获奖情况{/block}
 
 {block name="description"}比艾诺艺术中心非常注重教学质量，培养出来的学子屡次斩获国内外钢琴大赛大奖，欢迎来电咨询13196799363。{/block}
 

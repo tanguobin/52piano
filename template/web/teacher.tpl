@@ -1,6 +1,6 @@
 {extends file="lib/framework/base_fw.html"}
 
-{block name="title"} - 师资力量{/block}
+{block name="title"}师资力量{/block}
 
 {block name="description"}比艾诺艺术中心具备雄厚的师资力量，教师均来自国内外钢琴名校，在业界具备较高的声誉，欢迎来电咨询13196799363。{/block}
 
