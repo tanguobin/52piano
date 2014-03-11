@@ -25,6 +25,7 @@ class KnowAction extends BaseAction {
 		} else {
 			$pn = $_GET['pn'];
 			$size = 20;
+                        $max = 200;
 			if (isset($pn)) {
 				$pn = (int)($pn);
 			} else {
@@ -32,6 +33,9 @@ class KnowAction extends BaseAction {
 			}
 			$questions = self::get_know_list($pn, $size);
 			$total = KnowModel::get_ct_know();
+                        if ($total >= $max) {
+                                $total = $max;
+                        }
 			$this->setTplParam('questions', $questions);
 			$this->setTplParam('currentPn', $pn);
 			$this->setTplParam('rn', $size);
