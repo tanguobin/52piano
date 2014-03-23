@@ -1,6 +1,6 @@
 {extends file="lib/framework/base_fw.html"}
 
-{block name="title"}钢琴知识 - {$question.title}{/block}
+{block name="title"}{$question.title}{/block}
 
 {block name="description"}{$question.content|truncate:200:"..."}{/block}
 
