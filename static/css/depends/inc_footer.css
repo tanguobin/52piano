@@ -7,14 +7,31 @@
  * Description: footer部分样式
  */
 
-#footer, #footer a:link, #footer a:visited {
-    clear: both;
-    color: #77c;
-    padding: 1em 0;
-    margin-top: 55px;
-    text-align: center;
-    white-space: nowrap;
-}
 #footer {
-    border-top: 1px solid #ccc;
+	margin-top: 20px;
+}
+
+.logo {
+	float: left;
+	margin-right: 100px;
+}
+
+.nav-channel {
+	float: left;
+	margin-top: 10px;
+}
+
+.nav-channel li {
+	font-size: 14px;
+	float: left;
+	margin-right: 50px;
+}
+
+.copyright {
+	color: #8d8154;
+	margin-top: 40px;
+}
+
+.copyright a {
+	margin-left: 20px;
 }

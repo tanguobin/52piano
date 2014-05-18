@@ -8,7 +8,7 @@
  */
 
 /* 居中 */
-#header, #container, #footer {
+#container, #footer {
     margin-left: auto;
     margin-right: auto;
 }
@@ -20,6 +20,9 @@
     /* bug fix: 主栏没有内容时，在 Firefox 和 Chrome 等浏览器下，布局不对 */
     min-height: 1px;
 }
+.about .col-main, .teacher .col-main, .prize .col-main, .help .col-main, .qrcode .col-main, .piano .col-main  {
+	background: #f0f0f0;
+}
 
 /** 清除浮动 **/
 .layout:after, .main-wrap:after, .col-sub:after, .col-extra:after, .clearfix:after {
@@ -30,6 +33,7 @@
 }
 .layout {
     overflow: hidden;
+	margin-top: 10px;
 }
 .layout, .main-wrap, .col-sub, .col-extra .clearfix {
     *zoom: 1;
@@ -38,6 +42,15 @@
     float: left;
 }
 .col-sub {
-	width: 190px;
+	width: 47px;
 	margin-left: -100%;
+	background: #121212;
+	height: 570px;
+}
+
+.margin-47 {
+	margin-left: 47px;
+}
+.main-wrap {
+	padding: 10px 30px;
 }

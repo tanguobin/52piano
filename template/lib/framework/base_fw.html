@@ -2,36 +2,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <title>{block name="title"} Default page title {/block} 比艾诺艺术中心(52piano.cn) - 常州最好钢琴培训机构</title>
+        <title>{block name="title"} Default page title {/block}比艾诺艺术中心(52piano.cn)-常州最好钢琴培训及钢琴销售机构</title>
         {block name="loadConfig"}{config_load file="global.inc.cfg" scope="global"}{/block}
         <meta name="keywords" content="{block name="keywords"}常州钢琴培训, 常州最好钢琴培训，常州钢琴培训哪家好, 常州乐器培训, 常州钢琴老师, 少儿钢琴培训，学钢琴，钢琴课，儿童钢琴培训班，常州钢琴培训学校，钢琴培训中心，常州钢琴培训中心，钢琴老师，钢琴学习，常州钢琴学习，常州艺术培训，常州钢琴{/block}"/>
-        <meta name="description" content="{block name="description"}比艾诺艺术中心是常州最好的钢琴培训学校之一，咨询电话13196799363，兴趣第一，快乐学琴。中心由资深钢琴老师创办，引进国外先进钢琴教学系统，集钢琴演奏，视唱练耳，作曲，音乐欣赏为一体，是国内首家面向大众的高端钢琴培训机构。{/block}" />
+        <meta name="description" content="{block name="description"}比艾诺艺术中心是常州最好的集钢琴培训、钢琴销售为一体的综合学校之一，咨询电话13196799363，兴趣第一，快乐学琴。中心由资深钢琴老师创办，引进国外先进钢琴教学系统，集钢琴演奏，视唱练耳，作曲，音乐欣赏为一体，是国内首家面向大众的高端钢琴培训及钢琴销售机构。{/block}" />
         {block name="meta"}{/block}
         {block name="baseLink"}
         <link href="/static/css/52piano.css-min.css" rel="stylesheet" type="text/css" />
         {/block}
         {block name="cssLoad"}{/block}
+		{block name="head"}{/block}
     </head>
     <body>
-        <div id="header">
-        {block name="header"}
-            <a href="/" title="比艾诺艺术中心" class="logo"><img src="/static/img/logo.png" /></a>
-            <img class="fr cf" src="/static/img/qrcode.jpg" alt="微信公众账号" title="微信公众账号" />
-            {block name="nav"}
-            <div class="nav-channel">
-                <ul class="nav-channel-list">
-                    <li{block name="currentAbout"}{/block}><a href="/" title="首页" alt="首页">首页</a></li>
-                    <li{block name="currentTeacher"}{/block}><a href="/teacher.html" title="师资力量" alt="师资力量">师资力量</a></li>
-                    <li{block name="currentStudent"}{/block}><a href="/student.html" title="学生风采" alt="学生风采">学生风采</a></li>
-                    <li{block name="currentPrize"}{/block}><a href="/prize.html" title="获奖情况" alt="获奖情况">获奖情况</a></li>
-                    <li{block name="currentEnv"}{/block}><a href="/env.html" title="教学环境" alt="教学环境">教学环境</a></li>
-                    <li{block name="currentKnow"}{/block}><a href="/know.html" title="钢琴知识" alt="钢琴知识">钢琴知识</a></li>
-                    <li{block name="currentContact"}{/block}><a href="/contact.html" title="联系我们" alt="联系我们">联系我们</a></li>
-                </ul>
-            </div>
-            {/block}
-        {/block}
-        </div>
         <div id="container">
         {block name="container"}
             <div class="layout">
@@ -41,24 +23,33 @@
             </div>
         {/block}
         </div>
+		<div id="footer">
         {block name="footer"}
-        <div id="footer">
-            <p class="footer-nav">
-                <a href="/">关于我们</a>
-                |
-                <a href="/contact.html#cooperation">商务合作</a>
-                |
-                <a href="/contact.html#links">友情链接</a>
-            </p>
-            <p class="copyright">
-                ©Copyright 52piano.cn 2009-2014. All rights reserved
-            </p>
-        </div>
+            <a href="/" title="比艾诺艺术中心" class="logo"><img src="/static/img/logo.png" /></a>
+            {block name="nav"}
+            <div class="nav-channel">
+                <ul class="nav-channel-list">
+					<li><a href="/" title="网站首页" alt="网站首页">网站首页</a></li>
+                    <li><a href="/about.html" title="机构简介" alt="机构简介">机构简介</a></li>
+                    <li><a href="/teacher.html" title="师资力量" alt="师资力量">师资力量</a></li>
+                    <li><a href="/student.html" title="学生风采" alt="学生风采">学生风采</a></li>
+                    <li><a href="/prize.html" title="获奖情况" alt="获奖情况">获奖情况</a></li>
+                    <li><a href="http://shop110276298.taobao.com/" title="培训收费" alt="培训收费" target="_blank">培训收费</a></li>
+                </ul>
+				<div class="copyright">
+                ©Copyright 52piano.cn 2009-2014 All rights reserved.
+				<a class="i-contact" href="/contact.html">联系我们</a><a class="i-qrcode" href="/qrcode.html">二维码</a><a class="i-qrcode" href="/piano.html">电子钢琴</a>
+				</div>
+            </div>
+            {/block}
         {/block}
+        </div>
         {block name="scriptLoad"}
         <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.4.2/jquery.min.js"></script>
         {/block}
         {block name="foot"}{/block}
+		{*
         <script type="text/javascript">var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fcc754b8a258e29adfbcfa7a65c7a1f81' type='text/javascript'%3E%3C/script%3E"));</script>
+		*}
     </body>
 </html>

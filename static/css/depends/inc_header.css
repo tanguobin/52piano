@@ -7,40 +7,24 @@
  * Description: header部分样式
  */
 
-#header, #container, #footer {
+#container, #footer {
     width: 960px;
 }
-#header {
-    margin-top: 17px;
-    margin-bottom: 10px;
+.tab a {
+	text-decoration: none;
+	font-size: 14px;
+	width: 14px;
+	display: block;
+	margin-left: 18px;
+	padding-top: 18px;
 }
-.nav-channel {
-    overflow: hidden;
-    color: #fff;
-    height: 35px;
-    background-color: #14864b;
-    border-radius: 3px;
-    margin-top: 15px;
-	font-family: 'Microsoft YaHei';
+.tab .current a {
+	color: #000;
 }
-.nav-channel-list li {
-    font-size: 16px;
-    float: left;
-    width: 100px;
+.tab li {
+	background: url(/static/img/tab.png) no-repeat 0 0;
+	height: 122px;
 }
-.nav-channel-list li a {
-    color: white;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    height: 35px;
-    line-height: 35px;
-    cursor: pointer;
-}
-.nav-channel-list a:hover {
-    text-decoration: none;
-	background-color: #189052;
-}
-.nav-channel-list .nav-active a {
-	background-color: #085c42;
+.tab li.current {
+	background: url(/static/img/tab.active.png) no-repeat 0 0;
 }

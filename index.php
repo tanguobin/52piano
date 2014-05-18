@@ -27,13 +27,9 @@ $action_config = array (
 	'/^\/contact\.html/' => array (
    		'path' => HANDLER_PATH . 'ContactAction.class.php'
     ),
-	// 钢琴知识
-	'/^\/know(_[0-9]+)?\.html/' => array (
-   		'path' => HANDLER_PATH . 'KnowAction.class.php'
-    ),
-	// 教学环境
-	'/^\/env\.html/' => array (
-   		'path' => HANDLER_PATH . 'EnvAction.class.php'
+	// 二维码
+	'/^\/qrcode\.html/' => array (
+   		'path' => HANDLER_PATH . 'QRCodeAction.class.php'
     ),
 	// 获奖情况
     '/^\/prize\.html/' => array (
@@ -47,9 +43,17 @@ $action_config = array (
     '/^\/student\.html/' => array (
    		'path' => HANDLER_PATH . 'StudentAction.class.php'
     ),
+	// 机构简介
+    '/^\/about\.html/' => array (
+	    'path' => HANDLER_PATH . 'AboutAction.class.php'
+    ),
+	// 电子钢琴
+	'/^\/piano\.html/' => array (
+	    'path' => HANDLER_PATH . 'PianoAction.class.php'
+    ),
 	// 首页
     '/^\/?$/' => array (
-	    'path' => HANDLER_PATH . 'AboutAction.class.php'
+	    'path' => HANDLER_PATH . 'IndexAction.class.php'
     )
 );
 
