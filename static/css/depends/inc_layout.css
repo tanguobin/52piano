@@ -19,6 +19,7 @@
     width: 100%;
     /* bug fix: 主栏没有内容时，在 Firefox 和 Chrome 等浏览器下，布局不对 */
     min-height: 1px;
+	height: 570px;
 }
 .about .col-main, .teacher .col-main, .prize .col-main, .help .col-main, .qrcode .col-main, .piano .col-main  {
 	background: #f0f0f0;
