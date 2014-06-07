@@ -6,8 +6,13 @@
 
 {block name="container"}
 	<div class="layout teacher">
+		<div class="col-sub">
+			<ul class="cf tab">
+				<li class="current"><a title="师资力量" href="/teacher.html">师资力量</a></li>
+			</ul>
+		</div>
 		<div class="col-main">
-			<div class="main-wrap margin-47">
+			<div class="main-wrap">
 				<div class="title-bar">师资力量</div>
 				<div class="content">
 					<ul class="datalist">
@@ -23,11 +28,6 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-		<div class="col-sub">
-			<ul class="cf tab">
-				<li class="current"><a title="师资力量" href="/teacher.html">师资力量</a></li>
-			</ul>
 		</div>
 	</div>
 {/block}

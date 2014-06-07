@@ -51,6 +51,14 @@ $action_config = array (
 	'/^\/piano\.html/' => array (
 	    'path' => HANDLER_PATH . 'PianoAction.class.php'
     ),
+	// KAWAI
+	'/^\/kawai\.html/' => array (
+	    'path' => HANDLER_PATH . 'KAWAIAction.class.php'
+    ),
+	// YAMAHA
+	'/^\/yamaha\.html/' => array (
+	    'path' => HANDLER_PATH . 'YAMAHAAction.class.php'
+    ),
 	// 首页
     '/^\/?$/' => array (
 	    'path' => HANDLER_PATH . 'IndexAction.class.php'

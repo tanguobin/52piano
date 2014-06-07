@@ -28,3 +28,6 @@
 .tab li.current {
 	background: url(/static/img/tab.active.png) no-repeat 0 0;
 }
+.gangqin .tab a {
+	padding-top: 28px;
+}

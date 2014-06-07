@@ -16,12 +16,14 @@
 /** 布局基础样式 **/
 .col-main {
     float: left;
-    width: 100%;
     /* bug fix: 主栏没有内容时，在 Firefox 和 Chrome 等浏览器下，布局不对 */
     min-height: 1px;
-	height: 570px;
+	width: 910px;
 }
 .about .col-main, .teacher .col-main, .prize .col-main, .help .col-main, .qrcode .col-main, .piano .col-main  {
+	background: #f0f0f0;
+}
+.gangqin .col-main {
 	background: #f0f0f0;
 }
 
@@ -31,6 +33,9 @@
     display: block;
     height: 0;
     clear: both;
+}
+.help .main-wrap, .qrcode .main-wrap, .piano .main-wrap {
+	padding-bottom: 30px;
 }
 .layout {
     overflow: hidden;
@@ -44,14 +49,5 @@
 }
 .col-sub {
 	width: 47px;
-	margin-left: -100%;
 	background: #121212;
-	height: 570px;
-}
-
-.margin-47 {
-	margin-left: 47px;
-}
-.main-wrap {
-	padding: 10px 30px;
 }

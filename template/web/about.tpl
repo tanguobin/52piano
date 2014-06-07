@@ -4,9 +4,17 @@
 
 {block name="container"}
 	<div class="layout about">
+		<div class="col-sub">
+			<ul class="cf tab" id="J_tab">
+				<li class="current"><a title="机构简介" href="#intro">机构简介</a></li>
+				<li><a title="教学体系" href="#teching">教学体系</a></li>
+				<li><a title="教学特色" href="#feature">教学特色</a></li>
+				<li><a title="教学评价" href="#talk">教学评价</a></li>
+			</ul>
+		</div>
 		<div class="col-main">
-			<div class="main-wrap margin-47">
-				<div class="title-bar">机构简介</div>
+			<div class="main-wrap">
+				<div class="title-bar" id="J_title">机构简介</div>
 				<div class="content" id="J_about">
 					<div class="intro">
 						<p>比艾诺艺术中心于2009年由从事钢琴教学多年的资深钢琴教师创办于江苏常州。比艾诺艺术中心培训引进国外先进的数码钢琴教学系统，集钢琴教学、MIDI作曲、音乐欣赏为一体的强大教学体系，根据艺术规律、教育规律、儿童心理发展规律和认知规律的特点，借鉴"铃木教学法"等国际著名的教学模式，形成自己独特的钢琴教育理念，把传统教育枯燥、单一的训练模式变为真正的寓教于乐，营造优美的艺术境界，用音乐特有的美感，最大限度地激发和调动学生学习艺术的兴趣和潜能，遵循儿童身心发展水平，有效地传授知识和技巧，让孩子在快乐和愉悦中把握音乐精髓，领悟艺术真谛。</p>
@@ -14,7 +22,7 @@
 						<p>我们怀着对钢琴的执著和热忱，用科学的教育理念，为您提供最专业的知识、最细致的服务和最全面的发展！</p>
 						<img src="/static/img/intro.jpg" title="中心环境" alt="中心环境">
 					</div>
-					<ul class="teaching hide">
+					<ul class="teaching hide cf">
 						<li class="first">
 							<div class="title"><span class="i-idea"></span>教育理念</div>
 							<p>兴于仁 立于艺 成于乐</p>
@@ -28,7 +36,7 @@
 							<p>建立科学的教学体系，确定教学项目，制定教学标准及大纲。</p>
 						</li>
 					</ul>
-					<div class="feature hide">
+					<div class="feature hide cf">
 						<dl>
 							<dt><span class="i-profession"></span></dt>
 							<dd>
@@ -106,14 +114,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-sub">
-			<ul class="cf tab" id="J_tab">
-				<li class="current"><a title="机构简介" href="#intro">机构简介</a></li>
-				<li><a title="教学体系" href="#teching">教学体系</a></li>
-				<li><a title="教学特色" href="#feature">教学特色</a></li>
-				<li><a title="教学评价" href="#talk">教学评价</a></li>
-			</ul>
-		</div>
 	</div>
 {/block}
 
@@ -125,7 +125,7 @@
         hashes = ['#intro', '#teching', '#feature', '#talk'];
     $.each($('#J_tab li'), function (idx, ele) {
         $(ele).click(function (evt) {
-            $(ele).siblings().removeClass('current');
+			$(ele).siblings().removeClass('current');
             $(ele).addClass('current');
             aboutSections.hide().eq(idx).show();
             location.hash = hashes[idx];
@@ -133,27 +133,17 @@
         });
     });
 	function hash_change() {
-		switch(location.hash) {
-			case hashes[0]:
-				aboutSections.hide().eq(0).show();
-				nav.children().removeClass('current').eq(0).addClass('current');
+		var flag = 0;
+		for (var i = 0; i < hashes.length; i++) {
+			if (location.hash == hashes[i]) {
+				flag = i;
 				break;
-			case hashes[1]:
-				aboutSections.hide().eq(1).show();
-				nav.children().removeClass('current').eq(1).addClass('current');
-				break;
-			case hashes[2]:
-				aboutSections.hide().eq(2).show();
-				nav.children().removeClass('current').eq(2).addClass('current');
-				break;
-			case hashes[3]:
-				aboutSections.hide().eq(3).show();
-				nav.children().removeClass('current').eq(3).addClass('current');
-				break;
-			default:
-				aboutSections.hide().eq(0).show();
-				nav.children().removeClass('current').eq(0).addClass('current');
+			}	
 		}
+		aboutSections.hide().eq(flag).show();
+		var tab = nav.children().removeClass('current').eq(flag);
+		tab.addClass('current');
+		$('#J_title').html(tab.text());
 	}
 	$(window).bind("hashchange", hash_change);
 	hash_change();

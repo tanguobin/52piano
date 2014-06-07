@@ -6,8 +6,13 @@
 
 {block name="container"}
 	<div class="layout prize">
+		<div class="col-sub">
+			<ul class="cf tab">
+				<li class="current"><a title="获奖情况" href="/prize.html">获奖情况</a></li>
+			</ul>
+		</div>
 		<div class="col-main">
-			<div class="main-wrap margin-47">
+			<div class="main-wrap">
 				<div class="title-bar">部分学生获奖情况</div>
 				<div class="content">
 					<ul class="datalist">
@@ -26,11 +31,6 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-		<div class="col-sub">
-			<ul class="cf tab">
-				<li class="current"><a title="获奖情况" href="/prize.html">获奖情况</a></li>
-			</ul>
 		</div>
 	</div>
 {/block}

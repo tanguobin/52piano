@@ -1,6 +1,6 @@
 {extends file="lib/framework/base_fw.html"}
 
-{block name="title"}{/block}
+{block name="title"}二维码-{/block}
 
 {block name="container"}
     <div class="layout qrcode">
